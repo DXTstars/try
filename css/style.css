@@ -1,0 +1,329 @@
+﻿/*通用类*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0 auto;
+	font-size: 14px;
+	background: #f2fdff;
+	color: #333;
+	position: relative;
+}
+img {
+	border: none;
+}
+a {
+	cursor: pointer;
+	color: #333;
+	text-decoration: none;
+	outline: none;
+}
+ul {
+	list-style-type: none;
+}
+em {
+	font-style: normal;
+}
+.lt {
+	float: left;
+}
+.rt {
+	float: right;
+}
+div.clear {
+	font: 0px Arial;
+	line-height: 0;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: flex;
+	justify-content: space-around; /* 确保项目之间的空间均匀分布 */
+}
+/*wrapin 主体容器宽度*/
+.wrapin {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+header {
+	height: 50px;
+	background: rgb(70, 149, 160);
+}
+.nav li {
+	line-height: 50px;
+	float: left;
+	width: 14%;
+	text-align: center;
+	font-size: 15px;
+}
+.nav li a {
+	color: #333;
+}
+.banner {
+	display: block;
+}
+.banner img {
+	width: 100%;
+	display: block;
+}
+.con {
+	padding: 15px;
+	background: #fff;
+}
+.top .text {
+	float: left;
+	width: 60%;
+	line-height: 26px;
+}
+.top .pic {
+	float: right;
+	width: 38%;
+	margin-top: 20px;
+}
+.top .pic img {
+	width: 100%;
+}
+.title {
+	padding: 20px 0;
+}
+.title h2 {
+	color: #6b4c15;
+}
+.tupian ul {
+	margin: 0 -15px;
+}
+.tupian ul li {
+	width: 33.33%;
+	float: left;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.tupian ul li img {
+	width: 100%;
+	height: 230px;
+	object-fit: cover;
+}
+footer {
+	background: rgb(120, 186, 202);
+	text-align: center;
+	line-height: 30px;
+}
+.juese li {
+	position: relative;
+	
+	margin-bottom: 60px;
+	
+}
+.juese li .pic {
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 0;
+	top: 120px;
+	border-radius:200px;
+	overflow:hidden;
+	border:1px solid #333;
+}
+.juese li .pic img {
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+}
+
+.juese li .text{
+	margin-left:250px;
+	padding-top:30px;
+	margin-bottom:60px;
+}
+.juese li.text-only .text {
+	/* 如果需要的话，这里可以定义特定的样式 */
+	margin-left: 0; /* 假设你想取消这些特定列表项的左边距 */
+	padding-top: 30px;
+	margin-bottom:60px;
+  }
+
+.juese li .text h2{ margin-bottom:10px;}
+
+.juese li .text p{ line-height:26px;} 
+
+
+.juese2 li {
+	position: relative;
+	height: 200px; /* 调整整体高度为200px */
+	margin-bottom: 60px;
+	margin-top: 60px;
+  }
+  
+  .juese2 li .pic {
+	height: 200px; /* 图片高度与文字栏一致，即整体高度 */
+	width: 200px; /* 调整宽度以保持比例，可根据需要调整 */
+	position: absolute;
+	left: 0;
+	top: 20px; /* 调整顶部距离，使图片顶部与容器顶部对齐 */
+	border-radius: 200px; /* 调整圆角大小以匹配新的高度和宽度 */
+	overflow: hidden;
+	border: 1px solid #333;
+  }
+  
+  .juese2 li .pic img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+  }
+  
+  .juese2 li .text {
+	margin-left: 250px; /* 调整左边距以避免文本与图片重叠，根据图片宽度调整 */
+	padding-top: 30px; /* 保持原样或根据实际内容调整 */
+  }
+  
+  .juese2 li .text h2 {
+	margin-bottom: 10px; /* 保持原样 */
+  }
+  
+  .juese2 li .text p {
+	line-height: 26px; /* 保持原样 */
+  }
+
+.image-row {
+    display: flex;
+    justify-content: center; /* 将图片居中显示 */
+    gap: 20%; /* 在图片之间添加一些间隙，根据需要调整 */
+}
+
+.image-link {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    
+}
+.image-link img {
+    width: 100%; /* 使图片填充其链接容器的宽度 */
+	justify-content: center;
+	width: 150px; /* 直接设置图片的宽度 */
+    height: auto; /* 高度自动调整，以保持图片比例 */
+}
+.container {
+	display: flex;
+	justify-content: space-around; /* 使子元素平均分布在容器中 */
+	width: 100%; /* 容器宽度 */
+}
+.photo {
+	text-align: center; /* 图片和姓名居中对齐 */
+	margin: 10px; /* 为每个图片及姓名添加外边距 */
+}
+.photo img {
+	width: 150px; /* 设置图片宽度，根据需要调整 */
+	height: auto; /* 保持图片纵横比 */
+}
+.gallery {
+	display: flex;
+	flex-direction: column; /* 设置flex项目垂直排列 */
+	align-items: center; /* 照片居中对齐 */
+	padding: 0;
+	margin: 0;
+}
+.photo-item {
+	margin: 15px; /* 为每个照片项目添加外边距 */
+	text-align: center; /* 使照片和时间文本居中对齐 */
+}
+.photo-item img {
+	width: 800px; /* 设置照片宽度 */
+	height: auto; /* 保持照片的原始纵横比 */
+	margin-bottom: 5px; /* 照片与时间标签之间的空间 */
+}
+.main-title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 20px 0;
+}
+.row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 80px; /* 控制行与行之间的距离 */
+}
+.row img {
+	width: 600px; /* 图片宽度，可根据需要调整 */
+	height: 300px; /* 图片高度，可根据需要调整 */
+	margin-right: 50px; /* 图片和文字之间的距离 */
+}
+.text-section {
+	text-align: left;
+}
+.text-section h3 {
+	text-align: center;
+	font-weight: bold;
+	margin: 0 0 10px 0; /* 控制标题和正文之间的距离 */
+}
+.container {
+	display: flex;
+	flex-wrap: wrap; /* 允许内容换行 */
+	padding: 20px;
+}
+.image-text-row {
+	display: flex;
+}
+
+.image-text-row .image {
+	flex: 1;
+	width: 50%; /* 根据需要调整图片占据容器的宽度百分比 */
+}
+
+.image-text-row .image img {
+	width: 100%; /* 图片宽度占满整个.image容器 */
+	height: auto; /* 高度自动调整以保持图片的原始纵横比 */
+}
+
+.image-text-row .text {
+	flex: 1;
+	padding: 20px; /* 根据需要调整 */
+}
+.full-text-row {
+	width: 100%; /* 使文本占满整个容器宽度 */
+	margin-bottom: 20px; /* 行与行之间的间距 */
+	padding: 20px; /* 文本的内边距 */
+}
+.centered-container {
+	display: flex; /* 启用Flexbox布局 */
+	justify-content: center; /* 水平居中 */
+	align-items: center; /* 垂直居中 */
+	height: 200px; /* 容器高度，根据需要调整 */
+	border: 2px solid #000; /* 为了清晰显示容器边界 */
+}
+.white-text {
+	color: white;
+  }
+  .gallery1 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 800px; /* 调整为适合您的宽度 */
+	margin: auto;
+	gap: 10px; /* 图片之间的间距 */
+}
+
+.gallery1 img {
+	width: calc(25% - 10px); /* 减去间距的宽度 */
+	transition: transform 0.3s ease;
+	object-fit: cover; /* 确保图片不变形 */
+}
+
+.gallery1 img:hover {
+	transform: scale(2); /* 放大比例 */
+	z-index: 1; /* 确保放大的图片在顶层 */
+}
+
+
+
+
+
+
+
+
+
